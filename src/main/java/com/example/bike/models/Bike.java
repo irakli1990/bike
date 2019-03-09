@@ -1,13 +1,11 @@
 package com.example.bike.models;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
+@Table(name = "bike")
 public class Bike {
     private int id;
     private byte contact;
